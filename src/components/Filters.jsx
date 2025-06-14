@@ -1,31 +1,32 @@
 export default function Filters({ filters, setFilters }) {
   return (
-    <div className="bg-blue-500 p-4 rounded shadow">
+    <div className="bg-blue-500 p-4 rounded shadow w-64 text-white">
       <h2 className="text-lg font-semibold mb-4">Filters</h2>
-
+      
       {/* Category Filter */}
-      <div className="mb-4">
+      <div className="mb-6">
         <p className="font-medium mb-2">Category</p>
-        {['All', 'Electronics', 'Clothing'].map((cat) => (
-          <label key={cat} className="block">
+        {['All', 'Electronics', 'Clothing', 'Sports'].map((cat) => (
+          <label key={cat} className="flex items-center mb-2 cursor-pointer">
+            {/* Radio circle */}
             <input
               type="radio"
               name="category"
               value={cat}
               checked={filters.category === cat}
-              onChange={(e) =>
-                setFilters((prev) => ({ ...prev, category: e.target.value }))
+              onChange={() =>
+                setFilters((prev) => ({ ...prev, category: cat }))
               }
-              className="mr-2"
+              className="appearance-none w-4 h-4 border-2 border-white rounded-full mr-2 flex-shrink-0 cursor-pointer checked:bg-white checked:border-white"
             />
-            {cat}
+            <span className="text-white">{cat}</span>
           </label>
         ))}
       </div>
 
       {/* Price Filter */}
-      <div className="mb-4">
-        <p className="font-medium mb-2">Price (Max: ${filters.price})</p>
+      <div>
+        <p className="font-medium mb-2">Price</p>
         <input
           type="range"
           min="0"
@@ -38,9 +39,13 @@ export default function Filters({ filters, setFilters }) {
               price: Number(e.target.value),
             }))
           }
-          className="w-full"
+          className="w-full accent-white"
         />
+        <div className="flex justify-between text-white text-sm mt-2 px-2">
+          <span>$0</span>
+          <span>$1000</span>
+        </div>
       </div>
     </div>
-  )
+  );
 }
