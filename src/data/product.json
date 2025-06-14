@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Running Shoes",
+    "price": 99,
+    "image": "https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg",
+    "category": "Clothing"
+  },
+  {
+    "id": 2,
+    "title": "Wireless Headphones",
+    "price": 199,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s",
+    "category": "Electronics"
+  },
+  {
+    "id": 3,
+    "title": "Backpack",
+    "price": 129,
+    "image": "https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg",
+    "category": "Clothing"
+  },
+  {
+    "id": 4,
+    "title": "Smartwatch",
+    "price": 249,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s",
+    "category": "Electronics"
+  },
+  {
+    "id": 5,
+    "title": "Sunglasses",
+    "price": 149,
+    "image": "https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg",
+    "category": "Clothing"
+  },
+  {
+    "id": 6,
+    "title": "Digital Camera",
+    "price": 499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s",
+    "category": "Electronics"
+  },
+  {
+    "id": 7,
+    "title": "T-shirt",
+    "price": 29,
+    "image": "https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg",
+    "category": "Clothing"
+  },
+  {
+    "id": 8,
+    "title": "Smartphone",
+    "price": 699,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s",
+    "category": "Electronics"
+  },
+  {
+    "id": 9,
+    "title": "Mountain Bike",
+    "price": 850,
+    "image": "https://www.shutterstock.com/image-photo/cream-white-badminton-shuttlecock-racket-600nw-2501822005.jpg",
+    "category": "Sports"
+  },
+  {
+    "id": 10,
+    "title": "Cooking Pan Set",
+    "price": 120,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuitsfGxv9e89ViZI3fVjhVlYWmgxaZwDElA&s",
+    "category": "Home & Kitchen"
+  },
+  {
+    "id": 11,
+    "title": "Wireless Printer",
+    "price": 150,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuitsfGxv9e89ViZI3fVjhVlYWmgxaZwDElA&s",
+    "category": "Home & Kitchent"
+  },
+  {
+    "id": 12,
+    "title": "Yoga Mat",
+    "price": 35,
+    "image": "https://www.shutterstock.com/image-photo/cream-white-badminton-shuttlecock-racket-600nw-2501822005.jpg",
+    "category": "Sports"
+  }
+]
