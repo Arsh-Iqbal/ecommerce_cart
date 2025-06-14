@@ -2,8 +2,12 @@
 
 import Link from 'next/link'
 import { Search, ShoppingCart } from 'lucide-react'
+import { useCart } from '@/context/CartContext'
 
 export default function Header() {
+    const { cart } = useCart()
+  const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0)
+
   return (
     <header className="bg-gradient-to-r from-[rgb(7,73,180)] to-[#0a67d2] shadow sticky top-0 z-10">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
@@ -39,9 +43,11 @@ export default function Header() {
           <ShoppingCart size={18} />
           <span className="text-sm font-medium">Cart</span>
           
-            <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">
-             3
-            </span>
+            {totalCount > 0 && (
+              <span className="absolute -top-2 -right-2 text-xs bg-red-500 text-white px-1 rounded-full">
+                {totalCount}
+              </span>
+            )}
         
         </Link>
 
