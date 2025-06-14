@@ -4,6 +4,7 @@ import ProductCard from '../components/ProductCard'
 import Filters from '../components/Filters'
 import productsData from '../data/products.json'
 import { useEffect, useState } from 'react'
+import Footer from '@/components/Footer'
 
 export default function HomePage() {
   const [filters, setFilters] = useState({ category: 'All', price: 1000 })
@@ -45,7 +46,7 @@ export default function HomePage() {
         </section>
       </main>
 
-   
+   <Footer/>
     </div>
   )
 
