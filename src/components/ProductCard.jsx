@@ -7,13 +7,13 @@ export default function ProductCard({ product }) {
     <div className="bg-white shadow rounded p-4 flex flex-col hover:shadow-lg transition">
       {/* Image wrapped in Link to navigate to product detail page */}
       <Link href={`/product/${product.id}`}>
-        <a>
+       
           <img
             src={product.image}
             alt={product.title}
             className="w-full h-48 object-cover rounded cursor-pointer"
           />
-        </a>
+       
       </Link>
 
       {/* Product Title */}
