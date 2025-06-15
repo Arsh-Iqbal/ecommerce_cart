@@ -6,8 +6,8 @@ export default function Filters({ filters, setFilters }) {
       {/* Category Filter */}
       <div className="mb-6">
         <p className="font-medium mb-2">Category</p>
-        {['All', 'Electronics', 'Clothing', 'Sports'].map((cat) => (
-          <label key={cat} className="flex items-center mb-2 cursor-pointer">
+        {['All', 'Electronics', 'Clothing', 'Sports','Home & Kitchen'].map((cat) => (
+          <label key={cat} className="flex items-center mb-2 cursor-pointer gap-1 py-1">
             {/* Radio circle */}
             <input
               type="radio"
