@@ -1,34 +1,42 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { useRouter, usePathname, useSearchParams } from 'next/navigation'
-import { useState } from 'react'
-import { Search, ShoppingCart } from 'lucide-react'
-import { useCart } from '@/context/CartContext'
+import Link from "next/link";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Search, ShoppingCart } from "lucide-react";
+import { useCart } from "@/context/CartContext";
 
 export default function Header() {
-  const { cart } = useCart()
-  const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0)
+  const { cart } = useCart();
+  const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
-  const router = useRouter()
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
+  const [isClient, setIsClient] = useState(false);
 
-  const [searchText, setSearchText] = useState(searchParams.get('search') || '')
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const [searchText, setSearchText] = useState(
+    searchParams.get("search") || ""
+  );
 
   const handleSearch = (e) => {
-    if (e.key === 'Enter') {
-      const params = new URLSearchParams(searchParams.toString())
+    if (e.key === "Enter") {
+      const params = new URLSearchParams(searchParams.toString());
 
       if (searchText.trim()) {
-        params.set('search', searchText.trim())
+        params.set("search", searchText.trim());
       } else {
-        params.delete('search')
+        params.delete("search");
       }
 
-      router.push(`${pathname}?${params.toString()}`)
+      router.push(`${pathname}?${params.toString()}`);
     }
-  }
+  };
 
   return (
     <header className="bg-blue-700 shadow sticky top-0 z-10">
@@ -47,7 +55,10 @@ export default function Header() {
         {/* Search bar */}
         <div className="flex-1 px-4 max-w-md">
           <div className="relative">
-            <Search className="absolute inset-y-0 left-3 mt-2 flex items-center pointer-events-none text-gray-400" size={20} />
+            <Search
+              className="absolute inset-y-0 left-3 mt-2 flex items-center pointer-events-none text-gray-400"
+              size={20}
+            />
             <input
               type="text"
               placeholder="Search for products..."
@@ -61,10 +72,15 @@ export default function Header() {
 
         {/* Cart and avatar */}
         <div className="flex items-center gap-4 md:gap-6">
-          <Link href="/cart" className="relative flex items-center gap-1 bg-[#00204d] hover:bg-[#001933] text-white px-4 py-2 rounded-md transition">
+          <Link
+            href="/cart"
+            className="relative flex items-center gap-1 bg-[#00204d] hover:bg-[#001933] text-white px-4 py-2 rounded-md transition"
+          >
             <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
-            <span className="hidden sm:inline-block text-sm font-medium">Cart</span>
-            {totalCount > 0 && (
+            <span className="hidden sm:inline-block text-sm font-medium">
+              Cart
+            </span>
+            {isClient && totalCount > 0 && (
               <span className="absolute -top-2 -right-2 text-xs bg-white text-black px-1 rounded-full">
                 {totalCount}
               </span>
@@ -79,5 +95,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
