@@ -77,7 +77,7 @@ const images = Array.isArray(product.image) ? product.image : [product.image]
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-3">
           <button
-            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded text-sm sm:text-base"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md text-sm sm:text-base"
             onClick={handleAddToCart}
           >
             {inCart ? 'Add More to Cart' : 'Add to Cart'}
@@ -85,7 +85,7 @@ const images = Array.isArray(product.image) ? product.image : [product.image]
 
           {inCart && (
             <button
-              className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded text-sm sm:text-base"
+              className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md text-sm sm:text-base"
               onClick={() => router.push('/cart')}
             >
               Go to Cart
