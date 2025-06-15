@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <CartProvider>
            <Header />
           <main>{children}</main>
-            <Toaster position="top-right" />
+            <Toaster position="top-center" />
         </CartProvider>
        
       </body>
