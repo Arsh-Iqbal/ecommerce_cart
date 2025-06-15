@@ -8,6 +8,11 @@ import toast from 'react-hot-toast'
 export default function CartPage() {
   const { cart, setCart } = useCart()
   const [total, setTotal] = useState(0)
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   useEffect(() => {
     const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
@@ -26,9 +31,13 @@ export default function CartPage() {
     setCart((prev) => prev.filter((item) => item.id !== id))
   }
 
+  if (!isClient) {
+    return null // or a loading spinner
+  }
+
   if (cart.length === 0) {
     return (
-       <div className="text-center py-20 px-4">
+      <div className="text-center py-20 px-4">
         <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
           Your cart is empty 🛒
         </h2>
@@ -46,7 +55,7 @@ export default function CartPage() {
           {cart.map((item) => (
             <div
               key={item.id}
-              className="flex  flex-row  sm:items-center gap-4 bg-white p-4 rounded shadow"
+              className="flex flex-row sm:items-center gap-4 bg-white p-4 rounded shadow"
             >
               <img
                 src={item.image}
@@ -54,7 +63,9 @@ export default function CartPage() {
                 className="w-20 h-20 md:w-24 md:h-24 object-cover rounded"
               />
               <div className="flex-1">
-                <h2 className="text-sm md:text-base font-semibold text-gray-700 mb-1 md:mb-2 line-clamp-2">{item.title}</h2>
+                <h2 className="text-sm md:text-base font-semibold text-gray-700 mb-1 md:mb-2 line-clamp-2">
+                  {item.title}
+                </h2>
                 <p className="text-xs md:text-sm text-gray-500 mb-1 md:mb-2">${item.price} each</p>
 
                 {/* Quantity Controls */}
@@ -67,7 +78,7 @@ export default function CartPage() {
                     onChange={(e) =>
                       updateQuantity(item.id, Number(e.target.value))
                     }
-                    className="border px-2 py-1 w-16 rounded  text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="border px-2 py-1 w-16 rounded text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
               </div>
@@ -94,11 +105,12 @@ export default function CartPage() {
             <span>Total</span>
             <span>${total.toFixed(2)}</span>
           </div>
-          <button className="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded"
-          onClick={() => {
-    toast.success("Your products will be shipped soon!");
-  
-  }}>
+          <button
+            className="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded"
+            onClick={() => {
+              toast.success("Your products will be shipped soon!")
+            }}
+          >
             Checkout
           </button>
         </div>
