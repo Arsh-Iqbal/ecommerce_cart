@@ -33,9 +33,13 @@ export default function ProductCard({ product }) {
         />
       </Link>
 
-      <h2 className="text-lg font-semibold mt-2">{product.title}</h2>
-      <p className="text-blue-600 font-bold text-sm">${product.price}</p>
+      <h2 className="text-lg text-gray-700 font-semibold mt-2">{product.title}</h2>
+      <div className='flex items-center gap-2'>
+    <p className="text-gray-700 font-bold text-sm">${product.price}</p>
+       <p className="text-yellow-500 text-lg">★ ★ ★ ★ ☆</p>
 
+      </div>
+  
       <div className="mt-auto pt-2">
         {inCart ? (
           <button
