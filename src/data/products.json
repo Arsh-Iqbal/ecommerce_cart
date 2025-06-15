@@ -2,62 +2,103 @@
   {
     "id": 1,
     "title": "Running Shoes",
+    "description": "Comfortable and durable running shoes designed for all-day performance.",
     "price": 99,
-    "image": ["https://rukminim2.flixcart.com/image/850/1250/xif0q/shoe/t/6/w/9-vs-9500-9-world-wear-footwear-white-original-imagn6a5fqbncryj.jpeg?q=90&crop=false","https://m.media-amazon.com/images/I/71f3BmjCwtL.jpg","https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/99486859-0ff3-46b4-949b-2d16af2ad421/custom-nike-dunk-high-by-you-shoes.png"],
+    "image": [
+      "https://rukminim2.flixcart.com/image/850/1250/xif0q/shoe/t/6/w/9-vs-9500-9-world-wear-footwear-white-original-imagn6a5fqbncryj.jpeg?q=90&crop=false",
+      "https://m.media-amazon.com/images/I/71f3BmjCwtL.jpg",
+      "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/99486859-0ff3-46b4-949b-2d16af2ad421/custom-nike-dunk-high-by-you-shoes.png"
+    ],
     "category": "Clothing"
   },
   {
     "id": 2,
     "title": "Wireless Headphones",
+    "description": "High-quality wireless headphones with immersive sound and long battery life.",
     "price": 199,
-    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s","https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D"],
+    "image": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D"
+    ],
     "category": "Electronics"
   },
   {
     "id": 3,
     "title": "Shirt",
+    "description": "Classic casual shirt with a tailored fit for everyday wear.",
     "price": 129,
-    "image": ["https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg","https://t4.ftcdn.net/jpg/08/06/33/05/240_F_806330521_bkXFcljTbO0NmceJSjIqS10jX0F4zQhy.jpg","https://t3.ftcdn.net/jpg/11/90/72/92/240_F_1190729276_0nIbCpjmbWqGaJH7I1Jy0GELPTFtzRAM.jpg"],
+    "image": [
+      "https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg",
+      "https://t4.ftcdn.net/jpg/08/06/33/05/240_F_806330521_bkXFcljTbO0NmceJSjIqS10jX0F4zQhy.jpg",
+      "https://t3.ftcdn.net/jpg/11/90/72/92/240_F_1190729276_0nIbCpjmbWqGaJH7I1Jy0GELPTFtzRAM.jpg"
+    ],
     "category": "Clothing"
   },
   {
     "id": 4,
     "title": "Smartwatch",
+    "description": "Modern smartwatch with fitness tracking and notification support.",
     "price": 249,
-    "image": ["https://ptron.in/cdn/shop/files/B0C81WSDV1.MAIN.jpg?v=1690546549","https://m.media-amazon.com/images/I/61ZjlBOp+rL.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s"],
+    "image": [
+      "https://ptron.in/cdn/shop/files/B0C81WSDV1.MAIN.jpg?v=1690546549",
+      "https://m.media-amazon.com/images/I/61ZjlBOp+rL.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s"
+    ],
     "category": "Electronics"
   },
   {
     "id": 5,
     "title": "Formal",
+    "description": "Elegant formal wear perfect for office or special occasions.",
     "price": 149,
-    "image": ["https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg","https://t4.ftcdn.net/jpg/08/06/33/05/240_F_806330521_bkXFcljTbO0NmceJSjIqS10jX0F4zQhy.jpg","https://t3.ftcdn.net/jpg/11/90/72/92/240_F_1190729276_0nIbCpjmbWqGaJH7I1Jy0GELPTFtzRAM.jpg"],
+    "image": [
+      "https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg",
+      "https://t4.ftcdn.net/jpg/08/06/33/05/240_F_806330521_bkXFcljTbO0NmceJSjIqS10jX0F4zQhy.jpg",
+      "https://t3.ftcdn.net/jpg/11/90/72/92/240_F_1190729276_0nIbCpjmbWqGaJH7I1Jy0GELPTFtzRAM.jpg"
+    ],
     "category": "Clothing"
   },
   {
     "id": 6,
     "title": "Digital Camera",
+    "description": "Capture stunning photos and videos with this high-resolution digital camera.",
     "price": 499,
-    "image": ["https://images.pexels.com/photos/1528851/pexels-photo-1528851.jpeg?cs=srgb&dl=pexels-alexfu-1528851.jpg&fm=jpg","https://in.canon/media/image/2018/11/19/b639ce271d2b450c974112ee3a7246ba_PowerShot-SX70-HS-Front-Slant.png","https://pyxis.nymag.com/v1/imgs/ac2/ecc/356e919cdf152299805e6b22e0042a1fbd-1----.2x.h473.w710.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s"],
+    "image": [
+      "https://images.pexels.com/photos/1528851/pexels-photo-1528851.jpeg?cs=srgb&dl=pexels-alexfu-1528851.jpg&fm=jpg",
+      "https://in.canon/media/image/2018/11/19/b639ce271d2b450c974112ee3a7246ba_PowerShot-SX70-HS-Front-Slant.png",
+      "https://pyxis.nymag.com/v1/imgs/ac2/ecc/356e919cdf152299805e6b22e0042a1fbd-1----.2x.h473.w710.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s"
+    ],
     "category": "Electronics"
   },
   {
     "id": 7,
     "title": "T-shirt",
+    "description": "Soft and breathable cotton t-shirt for casual comfort.",
     "price": 29,
-    "image": ["https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg","https://t4.ftcdn.net/jpg/08/06/33/05/240_F_806330521_bkXFcljTbO0NmceJSjIqS10jX0F4zQhy.jpg","https://t3.ftcdn.net/jpg/11/90/72/92/240_F_1190729276_0nIbCpjmbWqGaJH7I1Jy0GELPTFtzRAM.jpg"],
+    "image": [
+      "https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg",
+      "https://t4.ftcdn.net/jpg/08/06/33/05/240_F_806330521_bkXFcljTbO0NmceJSjIqS10jX0F4zQhy.jpg",
+      "https://t3.ftcdn.net/jpg/11/90/72/92/240_F_1190729276_0nIbCpjmbWqGaJH7I1Jy0GELPTFtzRAM.jpg"
+    ],
     "category": "Clothing"
   },
   {
     "id": 8,
     "title": "Smartphone",
+    "description": "Latest smartphone with high-performance processor and sleek design.",
     "price": 699,
-    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSK8_BdPpbzhlPqJTQBXUofFwDAyrUceBwTg&s","https://c8.alamy.com/comp/DH80YG/iphone-5-smartphone-DH80YG.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s"],
+    "image": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSK8_BdPpbzhlPqJTQBXUofFwDAyrUceBwTg&s",
+      "https://c8.alamy.com/comp/DH80YG/iphone-5-smartphone-DH80YG.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPXfeDt5hJmrEqteqyEK7xxJLaBb9CvmoHg&s"
+    ],
     "category": "Electronics"
   },
   {
     "id": 9,
     "title": "Badminton",
+    "description": "High-quality badminton racket for casual and professional play.",
     "price": 850,
     "image": "https://www.shutterstock.com/image-photo/cream-white-badminton-shuttlecock-racket-600nw-2501822005.jpg",
     "category": "Sports"
@@ -65,6 +106,7 @@
   {
     "id": 10,
     "title": "Cooking Pan Set",
+    "description": "Non-stick cooking pan set for all your kitchen needs.",
     "price": 120,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuitsfGxv9e89ViZI3fVjhVlYWmgxaZwDElA&s",
     "category": "Home & Kitchen"
@@ -72,6 +114,7 @@
   {
     "id": 11,
     "title": "Fry Pan",
+    "description": "Durable fry pan ideal for everyday cooking.",
     "price": 150,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuitsfGxv9e89ViZI3fVjhVlYWmgxaZwDElA&s",
     "category": "Home & Kitchen"
@@ -79,6 +122,7 @@
   {
     "id": 12,
     "title": "Shuttle Cock",
+    "description": "Lightweight shuttlecock designed for smooth flight and durability.",
     "price": 35,
     "image": "https://www.shutterstock.com/image-photo/cream-white-badminton-shuttlecock-racket-600nw-2501822005.jpg",
     "category": "Sports"
