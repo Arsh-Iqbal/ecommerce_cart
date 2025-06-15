@@ -7,6 +7,7 @@ import Filters from "../../components/Filters";
 import productsData from "../../data/products.json";
 import { Menu } from "lucide-react";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export default function HomePage() {
   const searchParams = useSearchParams();
@@ -44,7 +45,9 @@ export default function HomePage() {
   }, [filters, searchTextFromUrl]);
 
   return (
+    
     <div className="min-h-screen flex flex-col">
+      <Header/>
       {/* Header for mobile */}
       <header className="flex items-center justify-between p-4 bg-white shadow top-0 z-20 md:hidden text-black">
         <h1 className="text-xl font-bold">My Products</h1>

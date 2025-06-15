@@ -1,5 +1,6 @@
 'use client'
 
+import Header from '@/components/Header'
 import { useCart } from '../../context/CartContext'
 import { Trash2 } from 'lucide-react'
 import { useEffect, useState } from 'react'
@@ -37,15 +38,20 @@ export default function CartPage() {
 
   if (cart.length === 0) {
     return (
+      <>
+      <Header/>
       <div className="text-center py-20 px-4">
         <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
           Your cart is empty 🛒
         </h2>
       </div>
+      </>
     )
   }
 
   return (
+    <>
+      <Header/>
     <div className="max-w-6xl mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold text-gray-900 mb-6">Shopping Cart</h1>
 
@@ -116,5 +122,7 @@ export default function CartPage() {
         </div>
       </div>
     </div>
+    </>
   )
+
 }
