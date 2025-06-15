@@ -1,5 +1,6 @@
 'use client'
 
+import { Carousel } from 'react-responsive-carousel'
 import products from '../../../data/products.json'
 import { useCart } from '../../../context/CartContext'
 import { useParams, useRouter } from 'next/navigation'
@@ -27,16 +28,31 @@ export default function ProductDetailPage() {
     addToCart(product, quantity)
     toast.success(`${quantity} ${product.title} added to cart`)
   }
+  
+const images = Array.isArray(product.image) ? product.image : [product.image]
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row gap-6">
-      {/* Left: Image */}
+      {/* Left: Image Carousel */}
       <div className="flex-1">
-        <img
-          src={product.image}
-          alt={product.title}
-          className="w-full h-64 sm:h-80 md:h-[400px] object-cover rounded shadow"
-        />
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          infiniteLoop
+          autoPlay
+          interval={4000}
+          className="rounded shadow"
+        >
+          {images.map((img, index) => (
+            <div key={index}>
+              <img
+                src={img}
+                alt={product.title}
+                className="h-64 sm:h-80 md:h-[400px] object-cover w-full rounded"
+              />
+            </div>
+          ))}
+        </Carousel>
       </div>
 
       {/* Right: Details */}
