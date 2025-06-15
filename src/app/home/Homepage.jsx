@@ -49,7 +49,7 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col">
       <Header/>
       {/* Header for mobile */}
-      <header className="flex items-center justify-between p-4 bg-white shadow top-0 z-20 md:hidden text-black">
+      <header className="flex items-center justify-between p-4 bg-white shadow top-0 md:hidden text-black">
         <h1 className="text-xl font-bold">My Products</h1>
         <button
           className="focus:outline-none"
