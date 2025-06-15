@@ -29,39 +29,39 @@ export default function ProductDetailPage() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+    <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row gap-6">
       {/* Left: Image */}
       <div className="flex-1">
         <img
           src={product.image}
           alt={product.title}
-          className="w-full h-[400px] object-cover rounded shadow"
+          className="w-full h-64 sm:h-80 md:h-[400px] object-cover rounded shadow"
         />
       </div>
 
       {/* Right: Details */}
-      <div className="flex-1 space-y-4">
-        <h1 className="text-2xl font-bold">{product.title}</h1>
-        <p className="text-blue-600 text-xl font-semibold">${product.price}</p>
-        <p className="text-gray-700">{product.description || 'Product description here.'}</p>
+      <div className="flex-1 space-y-3 text-sm sm:text-base">
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-800">{product.title}</h1>
+        <p className="text-lg sm:text-xl text-gray-800 font-semibold">${product.price}</p>
+        <p className="text-gray-700 text-sm sm:text-base">{product.description || 'Product description here.'}</p>
         <p className="text-sm text-gray-500">Category: {product.category}</p>
 
-        {/* Quantity Selector (Always visible) */}
-        <div className="flex items-center gap-2">
+        {/* Quantity Selector */}
+        <div className="flex items-center text-gray-600 gap-2">
           <label className="font-medium">Quantity:</label>
           <input
             type="number"
             min={1}
             value={quantity}
             onChange={(e) => setQuantity(Number(e.target.value))}
-            className="border px-3 py-1 w-20 rounded"
+            className="border px-3 py-1 w-20 rounded appearance-auto"
           />
         </div>
 
         {/* Action Buttons */}
-        <div className="flex gap-3">
+        <div className="flex flex-col sm:flex-row gap-3">
           <button
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded text-sm sm:text-base"
             onClick={handleAddToCart}
           >
             {inCart ? 'Add More to Cart' : 'Add to Cart'}
@@ -69,7 +69,7 @@ export default function ProductDetailPage() {
 
           {inCart && (
             <button
-              className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded"
+              className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded text-sm sm:text-base"
               onClick={() => router.push('/cart')}
             >
               Go to Cart
@@ -78,10 +78,10 @@ export default function ProductDetailPage() {
         </div>
 
         {/* Reviews Section */}
-        <div className="pt-6 border-t">
-          <h3 className="font-semibold text-lg mb-2">Reviews</h3>
-          <p className="text-yellow-500 text-lg">★ ★ ★ ★ ☆</p>
-          <p className="text-gray-700">Great product! Highly recommended.</p>
+        <div className="pt-4 border-t">
+          <h3 className="font-semibold text-base sm:text-lg mb-1 text-gray-700">Reviews</h3>
+          <p className="text-yellow-500 text-base">★ ★ ★ ★ ☆</p>
+          <p className="text-gray-700 text-sm sm:text-base">Great product! Highly recommended.</p>
         </div>
       </div>
     </div>
