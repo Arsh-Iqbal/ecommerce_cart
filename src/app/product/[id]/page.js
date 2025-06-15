@@ -6,7 +6,7 @@ import { useCart } from '../../../context/CartContext'
 import { useParams, useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import toast from 'react-hot-toast'
-import Header from '@/components/Header'
+
 
 export default function ProductDetailPage() {
   const { id } = useParams()
@@ -33,8 +33,7 @@ export default function ProductDetailPage() {
 const images = Array.isArray(product.image) ? product.image : [product.image]
 
   return (
-    <>
-      <Header/>
+  
     <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row gap-6">
       {/* Left: Image Carousel */}
       <div className="flex-1">
@@ -104,6 +103,6 @@ const images = Array.isArray(product.image) ? product.image : [product.image]
         </div>
       </div>
     </div>
-    </>
+   
   )
 }
