@@ -1,6 +1,6 @@
 export default function Filters({ filters, setFilters }) {
   return (
-    <div className="bg-blue-500 p-4 rounded shadow w-64 text-white">
+    <div className="bg-blue-500 p-4 rounded shadow w-64 text-white mt-3">
       <h2 className="text-lg font-semibold mb-4">Filters</h2>
       
       {/* Category Filter */}
